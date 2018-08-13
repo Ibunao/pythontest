@@ -26,8 +26,10 @@ response = HtmlResponse(url='', body=html, encoding='utf-8')
 selector = Selector(response=response)
 # 获取所有a标签
 temp = selector.xpath('//a')
-# 获取第一个body标签并从body标签开始找ul标签 /ul会找不到
-temp = selector.xpath('body')[0].xpath('//ul')
+# 获取第一个body标签并从body标签开始找ul标签 ./ul 相对标签的子标签
+temp = selector.xpath('body')[0].xpath('.//ul')
+print(temp)
+exit()
 # 获取body的子标签ul
 temp = selector.xpath('body/ul')
 # 获取body的后代标签li

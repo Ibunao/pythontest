@@ -35,4 +35,4 @@ class MMysql(object):
 test = MMysql('localhost', 'root', '123456', 'test')
 
 def test(test):
-
+    pass
