@@ -12,6 +12,6 @@ class HtmlOutPuter(object):
 
         print(len(self.datas)), 'records have been added!'
         for data in self.datas:
-            fout.write(data['title'].encode('utf-8'))
+            fout.write(data['title'])
             fout.write(data['url'])
         fout.close()

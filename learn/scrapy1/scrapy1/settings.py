@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for testSpider project
+# Scrapy settings for scrapy1 project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,19 +9,17 @@
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'testSpider'
+BOT_NAME = 'scrapy1'
 
-SPIDER_MODULES = ['testSpider.spiders']
-NEWSPIDER_MODULE = 'testSpider.spiders'
+SPIDER_MODULES = ['scrapy1.spiders']
+NEWSPIDER_MODULE = 'scrapy1.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#  客户端 user-agent请求头
-USER_AGENT = 'ozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+#USER_AGENT = 'scrapy1 (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-# 关闭robots爬虫规则
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = True
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -49,13 +47,13 @@ ROBOTSTXT_OBEY = False
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'testSpider.middlewares.TestspiderSpiderMiddleware': 543,
+#    'scrapy1.middlewares.Scrapy1SpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'testSpider.middlewares.TestspiderDownloaderMiddleware': 543,
+#    'scrapy1.middlewares.Scrapy1DownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -66,12 +64,9 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-# 激活pipline，从低到高开始执行
-ITEM_PIPELINES = {
-   'testSpider.pipelines.firstPipeline.firstPipeline': 300,
-   # 'testSpider.pipelines.MyFilesPipeline.MyFilesPipeline':400, # 文件下载
-   'testSpider.pipelines.MyImagesPipeline.MyImagesPipeline':500, # 图片下载
-}
+#ITEM_PIPELINES = {
+#    'scrapy1.pipelines.Scrapy1Pipeline': 300,
+#}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
@@ -93,28 +88,3 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
-
-'''
-FilesPipeline 配置
-'''
-# 设置文件存放位置
-FILES_STORE = './download/first/files'
-# 设置文件过期时间30天
-FILES_EXPIRES = 30
-
-'''
-ImagesPipeline 配置
-'''
-# 设置图片路径
-IMAGES_STORE = './download/first/images'
-# 制作缩略图
-IMAGES_THUMBS = {
-   'small': (50, 50),
-   'big': (270, 270)
-}
-# 设置图片过期时间30天
-IMAGES_EXPIRES = 30
-# 过滤图片大小
-# 过滤最小图片尺寸
-# IMAGES_MIN_HEIGH = 10
-# IMAGES_MIN_WIDTH = 10

@@ -1,2 +1,5 @@
 
 *.pyc
+*.pyc
+*.pyc
+test/scrapyTest/testSpider/testSpider/download/

@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+from scrapy.crawler import CrawlerProcess
 from ..items.firstspiderItem import firstspiderItem
 
 class FirstspiderSpider(scrapy.Spider):
@@ -26,3 +27,13 @@ class FirstspiderSpider(scrapy.Spider):
             item = firstspiderItem(url = url, img = img, content = content)
             yield item
         # 分析下一个请求
+
+if __name__ == '__main__':
+    '''
+    这种方式执行失败 《python爬虫开发与项目实战》295页
+    '''
+    process = CrawlerProcess({
+        'USER_AGENT' : 'ozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    })
+    process.crawl(FirstspiderSpider)
+    process.start()
