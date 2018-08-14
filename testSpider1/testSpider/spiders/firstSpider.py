@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-from ..items.firstspiderItem import firstspiderItem
+from testSpider.testSpider1.items.firstspiderItem import firstspiderItem
 
 class FirstspiderSpider(scrapy.Spider):
     # 爬虫名，必填
