@@ -16,6 +16,7 @@ class firstDownloadMiddleware(object):
 
     def process_request(self, request, spider):
         '''
+        请求需要被下载时通过此方法
         当request通过下载中间件的时，该方法调用，用来处理请求，理解成请求过程
         参数：
         request:处理的请求对象
@@ -34,12 +35,13 @@ class firstDownloadMiddleware(object):
         return None
 
     def process_response(self, request, response, spider):
-        # Called with the response returned from the downloader.
-
-        # Must either;
-        # - return a Response object
-        # - return a Request object
-        # - or raise IgnoreRequest
+        '''
+        当response通过下载中间件的时候调用该方法，用来处理响应，理解成处理响应数据的过程
+        :param request:
+        :param response:
+        :param spider:
+        :return:
+        '''
         return response
 
     def process_exception(self, request, exception, spider):
@@ -53,4 +55,70 @@ class firstDownloadMiddleware(object):
         pass
 
     def spider_opened(self, spider):
+        '''
+        爬虫启动时调用
+        :param spider:
+        :return:
+        '''
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+import random
+class RandomUserAgent(object):
+    '''
+    使用随机 User-Agent的中间件
+    '''
+    def __init__(self, agents):
+        self.agents = agents
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        '''
+        通过这个类方法创建对象
+        :param crawler:
+        :return:
+        '''
+        '''
+        settings.py USER_AGENTS的值示例
+        USER_AGENT = [
+            'ozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+            'ozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36',
+            'ozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+        ]
+
+        '''
+        # 获取配置文件settings中USER_AGENTS的值
+        return cls(crawler.settings.getlist('USER_AGENTS'))
+
+
+    def process_request(self, request, spider):
+        '''
+        中间件请求过程中设置request
+        :param request:
+        :param spider:
+        :return:
+        '''
+        # 设置request的的User-Agent头
+        request.headers.setdefault("User-Agent", random.choice(self.agents))
+
+
+class RandomProxy(object):
+    '''
+    使用随机代理的中间件
+    '''
+    def __init__(self, iplist):
+        self.iplist = iplist
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        return cls(crawler.settings.getlist('IPLIST'))
+
+    def process_request(self, request, spider):
+        '''
+        给代理随机添加上一个代理
+        :param request:
+        :param spider:
+        :return:
+        '''
+        proxy = random.choice(self.iplist)
+        request.meta['proxy'] = proxy

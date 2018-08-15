@@ -48,18 +48,24 @@ ROBOTSTXT_OBEY = False
 
 # Enable or disable spider middlewares
 # See https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+
+# 激活spider中间件的列表
 #SPIDER_MIDDLEWARES = {
 #    'testSpider.middlewares.TestspiderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
+
+# 激活下载中间件的列表
 #DOWNLOADER_MIDDLEWARES = {
 #    'testSpider.middlewares.TestspiderDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
 # See https://doc.scrapy.org/en/latest/topics/extensions.html
+
+# 扩展列表
 #EXTENSIONS = {
 #    'scrapy.extensions.telnet.TelnetConsole': None,
 #}
