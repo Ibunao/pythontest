@@ -1,5 +1,7 @@
 import scrapy
 from scrapy.pipelines.files import FilesPipeline
+from scrapy.http import Request
+import os
 
 class MyFilesPipeline(FilesPipeline):
     '''
@@ -35,3 +37,29 @@ class MyFilesPipeline(FilesPipeline):
         '''
         print(item)
         print(info)
+
+    def file_path(self, request, response=None, info=None):
+        '''
+        重写要保存的文件路径，不使用框架自带的hash文件名
+        :param request:
+        :param response:
+        :param info:
+        :return:
+        '''
+        def _warn():
+            from scrapy.exceptions import ScrapyDeprecationWarning
+            import warnings
+            warnings.warn('FilesPipeline.file_key(url) method is deprecated, please use '
+                          'file_path(request, response=None, info=None) instead',
+                          category=ScrapyDeprecationWarning, stacklevel=1)
+
+        # check if called from file_key with url as first argument
+        if not isinstance(request, Request):
+            _warn()
+            url = request
+        else:
+            url = request.url
+
+        # 后缀
+        media_ext = os.path.splitext(url)[1]  # change to request.url after deprecation
+        return 'full/%s%s' % (media_guid, media_ext)
