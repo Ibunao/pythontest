@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93af074c-5c2c-4f0f-86b2-0dee991eaeea" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSpider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testSpider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testSpider/testSpider/pipelines/MyFilesPipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/testSpider/testSpider/pipelines/MyFilesPipeline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1/MyRequests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weipan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/weipan.py" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/weipan.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,23 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="firstRun.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="firstRun.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testSpider/testSpider/runs/firstRun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
+            <state relative-caret-position="286">
               <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="firstSpider.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testSpider/testSpider/spiders/firstSpider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-              <folding>
-                <element signature="e#24#37#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -91,11 +80,13 @@
         <option value="$PROJECT_DIR$/testSpider1/testSpider/firstRun.py" />
         <option value="$PROJECT_DIR$/testSpider/testSpider/runs/firstRun.py" />
         <option value="$PROJECT_DIR$/testSpider/testSpider/spiders/firstSpider.py" />
+        <option value="$PROJECT_DIR$/test1/MyRequests.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="347" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="66" />
+    <option name="y" value="11" />
     <option name="width" value="1578" />
     <option name="height" value="1040" />
   </component>
@@ -107,7 +98,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,32 +108,13 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="runs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="test1" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,7 +140,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.firstRun (2)">
+  <component name="RunManager" selected="Python.MyRequests">
+    <configuration name="MyRequests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test1/MyRequests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="firstRun (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -242,38 +231,20 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="xpathTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pachong/self/scrapyTest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pachong/self/scrapyTest/xpathTest.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
-      <item itemvalue="Python.xpathTest" />
       <item itemvalue="Python.firstSpider" />
       <item itemvalue="Python.firstRun" />
       <item itemvalue="Python.firstRun (1)" />
       <item itemvalue="Python.firstRun (2)" />
+      <item itemvalue="Python.MyRequests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.MyRequests" />
         <item itemvalue="Python.firstRun (2)" />
         <item itemvalue="Python.firstRun (1)" />
         <item itemvalue="Python.firstRun" />
         <item itemvalue="Python.firstSpider" />
-        <item itemvalue="Python.xpathTest" />
       </list>
     </recent_temporary>
   </component>
@@ -291,14 +262,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="347" y="0" width="1578" height="1040" extended-state="0" />
+    <frame x="66" y="11" width="1578" height="1040" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20158103" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20421608" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003574" side_tool="true" weight="0.3295711" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996426" weight="0.12527716" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996426" visible="true" weight="0.57427937" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="8" weight="0.43792325" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -306,10 +277,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34922394" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
     </layout>
@@ -497,11 +468,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pachong/分布式爬虫/ControlNode/DataOutput.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pachong/self/first/spider_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
@@ -732,17 +698,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testSpider/testSpider/firstRun.py" />
-    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/runs/firstRun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/ding/python/Lib/site-packages/pip/_vendor/requests/packages/urllib3/util/retry.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3350">
           <caret line="183" column="8" selection-start-line="183" selection-start-column="8" selection-end-line="183" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1/MyRequests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="48" />
         </state>
       </provider>
     </entry>
@@ -753,6 +719,13 @@
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/runs/firstRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
         </state>
       </provider>
     </entry>

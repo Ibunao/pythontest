@@ -33,7 +33,9 @@ ROBOTSTXT_OBEY = False
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
+# 开启cookie
+COOKIES_ENABLED = True
+COOKIES_DEBUG = True
 
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
@@ -54,7 +56,7 @@ ROBOTSTXT_OBEY = False
 # See https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 # 注册下载中间件
 DOWNLOADER_MIDDLEWARES = {
-   'weipanSpider.middlewares.RandomIpproxy': 543,
+   # 'weipanSpider.middlewares.RandomIpproxy': 543,
 }
 
 # Enable or disable extensions

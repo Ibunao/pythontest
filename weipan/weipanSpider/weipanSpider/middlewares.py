@@ -110,29 +110,34 @@ import redis
 from scrapy.utils.project import get_project_settings
 
 class RandomIpproxy:
+    '''
+    代理不行，之后的代码还没有实现，如果一个代理异常，删除这个代理，重新请求，当代理数小于3时重新获取代理添加到redis
+    '''
     redis = None
     '''
     代理中间件
     '''
     def __init__(self, iplist):
+        # print(type(iplist), iplist)
         self.iplist = iplist
 
     @classmethod
     def from_crawler(cls, crawler):
-
         return cls(cls.get_ipproxy())
 
     def process_request(self, request, spider):
         proxy = random.choice(self.iplist)
         if proxy:
-            request.meta['proxy'] = proxy
+            print(proxy, type(proxy))
+            request.meta['proxy'] = 'http://121.235.202.194:65309'
+
 
     @classmethod
     def get_ipproxy(cls):
         if cls.get_redis():
-            iplist = cls.redis.llen('ipproxy')
-            if iplist:
-                return iplist
+            len = cls.redis.llen('ipproxy')
+            if len:
+                return cls.redis.lrange('ipproxy', 0, len)
             else:
                 type = 'http'
                 res = requests.get('http://lab.crossincode.com/proxy/get/?num=5&head={}'.format(type))
@@ -142,9 +147,20 @@ class RandomIpproxy:
                     list = temp['proxies']
                     for item in list:
                         # print(item)
-                        iplist.append(item[type])
-                cls.redis.lpush('ipproxy', iplist)
+                        iplist.append('http://'+item[type])
+                cls.redis.lpush('ipproxy', *tuple(iplist))
                 return iplist
+
+    def process_exception(self, request, exception, spider):
+        '''
+        处理异常
+        :param request:
+        :param exception:
+        :param spider:
+        :return:
+        '''
+        # 捕捉异常
+        print(exception)
 
     @classmethod
     def get_redis(cls):
@@ -154,7 +170,7 @@ class RandomIpproxy:
 
         red = redis.Redis(host=settings['REDIS_HOST'], port=settings['REDIS_PORT'], db=settings['REDIS_DB'], decode_responses=True)
         if red:
-            print(red)
+            # print(red)
             cls.redis = red
             return red
-        raise Exception()
+        raise Exception('get_redis error')
