@@ -7,8 +7,8 @@
 
 import scrapy
 
-
 class WeipanspiderItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    fileurl = scrapy.Field()
+    path = scrapy.Field()
+    filename = scrapy.Field()

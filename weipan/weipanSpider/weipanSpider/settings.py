@@ -67,10 +67,10 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'weipanSpider.pipelines.WeipanspiderPipeline': 300,
-#}
-
+# 激活pipline，从低到高开始执行
+ITEM_PIPELINES = {
+   'weipanSpider.pipelines.MyFilesPipeline':400, # 文件下载
+}
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
@@ -101,3 +101,13 @@ REDIS_DB = '0'
 MONGO_HOST = '118.25.38.240'
 MONGO_PORT = '27017'
 MONGO_DB = 'weipan'
+
+USER_AGENT = 'ozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+
+'''
+FilesPipeline 配置
+'''
+# 设置文件存放位置
+FILES_STORE = '../download/first/files'
+# 设置文件过期时间30天
+FILES_EXPIRES = 30
