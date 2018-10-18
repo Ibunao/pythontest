@@ -33,5 +33,19 @@ def produce(c):
         print('[PRODUCER] Consumer return: %s' % r)
     c.close()
 
-c = consumer()
-produce(c)
+# c = consumer()
+# produce(c)
+
+def fib(n):
+    current = 0
+    num1, num2 = 0, 1
+    while current < n:
+        num = num1
+        num1, num2 = num2, num1+num2
+        current += 1
+        print('yield')
+        # 关键点
+        yield num
+    return 'edone'
+ding = fib(5)
+print(ding)
