@@ -15,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/weipanSpider/weipanSpider/spiders/weipan.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="61">
-              <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="30" selection-end-column="20" />
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="14" selection-end-line="30" selection-end-column="20" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -26,11 +26,8 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weipanSpider/weipanSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-89">
+            <state relative-caret-position="570">
               <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-              <folding>
-                <element signature="e#294#307#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -76,17 +73,15 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="191" />
-    <option name="y" value="27" />
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="773" />
+    <option name="height" value="716" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,6 +115,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,8 +148,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="191" y="27" width="1280" height="773" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1280" height="716" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16362192" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -162,16 +157,16 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.48076922" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.47980613" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
@@ -180,6 +175,30 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/weipanSpider/weipanSpider/spiders/weipan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipanSpider/weipanSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipanSpider/weipanSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weipanSpider/weipanSpider/spiders/weipan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -247,18 +266,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weipanSpider/weipanSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
+        <state relative-caret-position="570">
           <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="e#294#307#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weipanSpider/weipanSpider/spiders/weipan.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="61">
-          <caret line="26" column="12" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="30" selection-end-column="20" />
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="14" selection-end-line="30" selection-end-column="20" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
