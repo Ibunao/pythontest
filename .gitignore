@@ -5,3 +5,4 @@
 test/scrapyTest/testSpider/testSpider/download/
 
 download/
+.idea/workspace.xml
