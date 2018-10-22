@@ -4,7 +4,7 @@ from scrapy.http.request import Request
 
 class WeipanSpider(scrapy.Spider):
     name = 'test'
-    # 这个不会过滤首页
+    # 这个不会过滤第一次访问的url
     # allowed_domains = ['weibo.com']
     allowed_domains = ['wuxingxiangsheng.com']
     # start_urls = ['http://vdisk.weibo.com/u/1358179637']
