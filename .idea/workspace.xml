@@ -2,15 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93af074c-5c2c-4f0f-86b2-0dee991eaeea" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/weipan/weipanSpider/.idea/libraries/R_User_Library.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weipan/weipanSpider/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weipan/weipanSpider/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weipan/weipanSpider/.idea/weipanSpider.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weipan/weipanSpider/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caipiao/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caipiao/shuangseqiu.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test1/geci.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weipan/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weipan/weipanSpider/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weipan_spider/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weipan_spider/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weipan_spider/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weipan_spider/.idea/weipan_spider.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weipan_spider/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cankao/cankao/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cankao/cankao/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/CookieTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/CookieTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weipan/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weipan/.idea/weipan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/.idea/weipan.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weipan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weipan/weipanSpider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weipan/weipanSpider/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,21 +26,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testSpider/testSpider/settings.py">
+    <leaf>
+      <file leaf-file-name="CookieTest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/CookieTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1500">
-              <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            <state relative-caret-position="240">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CookieTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/CookieTest.py">
+      <file leaf-file-name="weipansearch.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/weipansearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+            <state relative-caret-position="432">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -42,63 +48,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firstspiderItem.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testSpider/testSpider/items/firstspiderItem.py">
+      <file leaf-file-name="weipan.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/weipan.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="48">
+              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firstPipeline.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/firstPipeline.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="97" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/__init__.py">
+      <file leaf-file-name="items.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/items.py">
           <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="MyFilesPipeline.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/MyFilesPipeline.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="929">
-              <caret line="64" column="40" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MyImagesPipeline.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/MyImagesPipeline.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="firstSpider.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testSpider/testSpider/spiders/firstSpider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="39" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -119,6 +80,8 @@
       <find>item</find>
       <find>media_guid</find>
       <find>MONGO_DATABASE</find>
+      <find>get_utc_seconds</find>
+      <find>spider_util</find>
     </findStrings>
     <dirStrings>
       <dir>F:\python\test</dir>
@@ -169,13 +132,17 @@
         <option value="$PROJECT_DIR$/test/myProcess/myprocess1.py" />
         <option value="$PROJECT_DIR$/test/myProcess/myprocess2.py" />
         <option value="$PROJECT_DIR$/test/my协程/协程1.py" />
+        <option value="$PROJECT_DIR$/caipiao/shuangseqiu.py" />
+        <option value="$PROJECT_DIR$/weipan_spider/readme.md" />
+        <option value="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/weipan.py" />
+        <option value="$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/weipansearch.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="101" />
-    <option name="y" value="103" />
-    <option name="width" value="1727" />
+    <option name="x" value="390" />
+    <option name="y" value="15" />
+    <option name="width" value="1477" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -186,35 +153,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="cankao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="testSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="pipelines" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
@@ -242,19 +187,45 @@
               <item name="weipanSpider" type="462c0819:PsiDirectoryNode" />
               <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider-master" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider-master" type="462c0819:PsiDirectoryNode" />
+              <item name="weipan_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cankao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/weipan/weipanSpider" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\python\weipan\weipanSpider\weipanSpider\spiders" />
       <recent name="F:\python" />
       <recent name="F:\python\pachong\分布式爬虫" />
       <recent name="F:\python\project1" />
@@ -272,7 +243,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.协程1">
+  <component name="RunManager" selected="Python.shuangseqiu">
     <configuration name="协程1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -327,24 +298,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="mythread1" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/myThread" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/myThread/mythread1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="mythread2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -363,20 +316,38 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="shuangseqiu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/caipiao" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/caipiao/shuangseqiu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <list>
-      <item itemvalue="Python.mythread1" />
       <item itemvalue="Python.mythread2" />
       <item itemvalue="Python.myprocess1" />
       <item itemvalue="Python.myprocess2" />
       <item itemvalue="Python.协程1" />
+      <item itemvalue="Python.shuangseqiu" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.shuangseqiu" />
         <item itemvalue="Python.协程1" />
         <item itemvalue="Python.myprocess2" />
         <item itemvalue="Python.myprocess1" />
         <item itemvalue="Python.mythread2" />
-        <item itemvalue="Python.mythread1" />
       </list>
     </recent_temporary>
   </component>
@@ -403,22 +374,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="101" y="103" width="1727" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="390" y="15" width="1477" height="1040" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49802372" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.100790516" side_tool="true" weight="0.21840355" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8992095" weight="0.35587582" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49934125" weight="0.43791574" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49868247" weight="0.30709535" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.13017397" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8992095" weight="0.35587582" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49868247" visible="true" weight="0.31929046" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15737474" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3292683" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49407116" weight="0.3481153" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49407116" weight="0.3481153" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -427,15 +397,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8992095" weight="0.35587582" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13017397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49802372" weight="0.3292683" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8992095" weight="0.35587582" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49802372" weight="0.3292683" />
+      <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
       <window_info anchor="bottom" id="Python Console" order="8" sideWeight="0.49934125" weight="0.43791574" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -486,98 +456,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/myudp/myClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/myudp/myService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="15" lean-forward="true" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/mytcp/myService.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="27" column="49" selection-start-line="23" selection-start-column="13" selection-end-line="27" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/ding/python/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="310" selection-start-line="310" selection-end-line="310" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/mytcp/myClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/多线程.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/myThread/mythread1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="e#14#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/myProcess.py" />
-    <entry file="file://$PROJECT_DIR$/test/myThread/mythread2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#14#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/scrapy.cfg">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/my协程/协程1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="20" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/myProcess/myprocess2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="29" column="11" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -589,9 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <element signature="e#23#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -617,11 +492,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/learn/for-resqusts.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1073">
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1073" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/learn/scrapy1/scrapy.cfg">
@@ -671,9 +542,6 @@
     <entry file="file://$PROJECT_DIR$/testSpider/testSpider/middlewares/firstSpiderMiddleware.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/items.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/testSpider/testSpider/extensions/firstExtension.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-89" />
@@ -700,9 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="427">
           <caret line="24" column="35" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#60#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,20 +581,10 @@
     <entry file="file://$PROJECT_DIR$/testSpider/testSpider/runs/papers.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/spiders/firstSpider.py">
+    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/CookieTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="24">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -740,43 +595,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/MyImagesPipeline.py">
+    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/firstPipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/MyFilesPipeline.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="929">
-          <caret line="64" column="40" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="97" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/firstPipeline.py">
+    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/MyFilesPipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="4" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="97" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="804">
+          <caret line="64" column="40" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/settings.py">
+    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/pipelines/MyImagesPipeline.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1500">
-          <caret line="33" column="36" lean-forward="true" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="430">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testSpider/testSpider/spiders/firstSpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test1/xiushi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="18" lean-forward="true" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/caipiao/shuangseqiu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="23" lean-forward="true" selection-start-line="6" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan_spider/weipan_spider-master/start.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan_spider/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="24">
+            <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan_spider/weipan_spider-master/weipan_spider/cookie.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan_spider/weipan_spider-master/weipan_spider/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan_spider/weipan_spider-master/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan_spider/weipan_spider-master/weipan_spider/spiders/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan_spider/weipan_spider-master/weipan_spider/downloadfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/scrapy.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan_spider/weipan_spider-master/weipan_spider/spiders/weipan_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/CookieTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/weipan.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weipan/weipanSpider/weipanSpider/spiders/weipansearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
