@@ -29,6 +29,7 @@ class MyFilesPipeline(FilesPipeline):
         :return:
         '''
         self.item = item
+        print(item['fileurl'])
         yield scrapy.Request(item['fileurl'])
 
     def item_completed(self, results, item, info):
@@ -39,7 +40,7 @@ class MyFilesPipeline(FilesPipeline):
         :param info:
         :return:
         '''
-        print(results)
+        print(results, 'xiazaiwancheng')
 
     def file_path(self, request, response=None, info=None):
         '''

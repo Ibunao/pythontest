@@ -38,7 +38,7 @@ class WeipansearchSpider(scrapy.Spider):
         # print(response.body)
         info = json.loads(response.text)
         print(info)
-        witem = WeipanspiderItem(path = '', fileurl = info['url'], filename = info['title'])
+        witem = WeipanspiderItem(path = 'ding', fileurl = info['url'], filename = info['title'])
         yield witem
 
 

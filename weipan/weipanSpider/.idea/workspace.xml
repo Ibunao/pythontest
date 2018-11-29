@@ -28,8 +28,8 @@
       <file leaf-file-name="pipelines.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weipanSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="66" column="40" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="40" />
+            <state relative-caret-position="58">
+              <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
               <folding>
                 <element signature="e#295#308#0" expanded="true" />
               </folding>
@@ -52,8 +52,8 @@
       <file leaf-file-name="weipansearch.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weipanSpider/spiders/weipansearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="332">
+              <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -64,7 +64,7 @@
       <file leaf-file-name="middlewares.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weipanSpider/middlewares.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
+            <state relative-caret-position="-428">
               <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
@@ -96,6 +96,7 @@
       <list>
         <option value="$PROJECT_DIR$/weipanSpider/spiders/CookieTest.py" />
         <option value="$PROJECT_DIR$/weipanSpider/test/ResponseTest.py" />
+        <option value="$PROJECT_DIR$/weipanSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/weipanSpider/spiders/weipansearch.py" />
       </list>
     </option>
@@ -396,13 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weipanSpider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weipanSpider/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -420,10 +414,17 @@
     <entry file="file://$PROJECT_DIR$/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/weipanSpider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-428">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/weipanSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="66" column="40" selection-start-line="66" selection-start-column="36" selection-end-line="66" selection-end-column="40" />
+        <state relative-caret-position="58">
+          <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
           <folding>
             <element signature="e#295#308#0" expanded="true" />
           </folding>
@@ -442,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weipanSpider/spiders/weipansearch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="332">
+          <caret line="40" column="45" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="45" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
