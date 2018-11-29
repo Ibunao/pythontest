@@ -102,7 +102,7 @@ MONGO_HOST = '118.25.38.240'
 MONGO_PORT = '27017'
 MONGO_DB = 'weipan'
 
-USER_AGENT = 'ozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
 
 '''
 FilesPipeline 配置

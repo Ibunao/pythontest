@@ -6,7 +6,7 @@ import time
 
 class Qiubai_spider():
     def __init__(self):
-        self.url = "http://www.qiushibaike.com/8hr/page/{}/"
+        self.url = "http://www.yue365.com/geci/weimei/"
         self.headers = {
             "User-Agent":"Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1 Trident/5.0;"
         }
@@ -23,29 +23,32 @@ class Qiubai_spider():
         if response.status_code != 200 :
             raise Exception('响应码错误 %s 响应码 %s' % (url, response.status_code))  #当响应码不是200时候，做断言报错处理
         print(url)
-        return etree.HTML(response.text) #返回etree之后的html
+        content = response.content
+        # print(content.decode('gbk'))
+        content = content.decode('gbk')
+        return etree.HTML(content) #返回etree之后的html
 
     def parse_content(self,html):
-        item_temp = html.xpath('//div[@class="content"]')
+        item_temp = html.xpath('//*[@id="songlist"]/li/div')
         print(len(item_temp))
         for item in item_temp:
-            content = item.xpath("./span/text()")[0].replace("\n", "") #获取内容
+            content = item.xpath("./span[3]/text()") #获取内容
+            if not content:
+                continue
+            content = content[0]
+            name = item.xpath("./span[1]/a/text()")[0][0:-2]  # 歌名
+            author = item.xpath("./span[2]/a/text()")[0] # 作者
             # 向集合中添加数据
-            # self.db['xiushibaike'].insert({'content': content})
-            print(content)
+            self.db['caige'].insert({'content': content, 'name': name, 'author': author})
+            print(content, name, author)
 
 
     def run(self):
         '''函数的主要逻辑实现
         '''
-        i = 10
-        while i <= 30 :
-            url = self.url.format(i) #获取到url
-            html = self.parse_url(url) #请求url
-            self.parse_content(html) #解析页面内容并把内容存入内容队列
-            i += 1
-            time.sleep(1)
 
+        html = self.parse_url(self.url)  # 请求url
+        self.parse_content(html)  # 解析页面内容并把内容存入内容队列
         self.client.close()
 
 if __name__ == "__main__":

@@ -363,16 +363,30 @@ html = '''<table class="v_sort v_sort_body" style="position:relative;" id="share
 		</table>
 '''
 
-# 构造response对象
-response = HtmlResponse(url='', body=html, encoding='utf-8')
-selector = Selector(response=response)
-# 获取所有a标签
-items = selector.xpath('//tbody/tr')
-for item in items:
-    # ref = item.xpath('@data-copyref').extract_first()
-    # targetA = item.xpath('.//td[2]/div/div[2]/div/a')
-    # targetUrl = targetA.xpath('@href').extract_first()
-    # targetName = targetA.xpath('@title').extract_first()
-    info = item.xpath('.//th/span/a[1]/@data-info').extract_first()
-    info = json.loads(info)
-    print(info)
+# # 构造response对象
+# response = HtmlResponse(url='', body=html, encoding='utf-8')
+# selector = Selector(response=response)
+# # 获取所有a标签
+# items = selector.xpath('//tbody/tr')
+# for item in items:
+#     # ref = item.xpath('@data-copyref').extract_first()
+#     # targetA = item.xpath('.//td[2]/div/div[2]/div/a')
+#     # targetUrl = targetA.xpath('@href').extract_first()
+#     # targetName = targetA.xpath('@title').extract_first()
+#     info = item.xpath('.//th/span/a[1]/@data-info').extract_first()
+#     info = json.loads(info)
+#     print(info)
+
+
+# from datetime import datetime, time
+# utcnow = datetime.utcnow()
+# ep_time = datetime.strptime('19700101', "%Y%m%d")
+# delta = utcnow - ep_time
+# print(int(delta.total_seconds()))
+
+
+import time
+import datetime
+
+nowTime = int(round(time.time() * 1000))
+print(nowTime)
