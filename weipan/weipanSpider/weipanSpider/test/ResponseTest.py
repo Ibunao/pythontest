@@ -385,8 +385,12 @@ html = '''<table class="v_sort v_sort_body" style="position:relative;" id="share
 # print(int(delta.total_seconds()))
 
 
-import time
-import datetime
+# import time
+# import datetime
+#
+# nowTime = int(round(time.time() * 1000))
+# print(nowTime)
 
-nowTime = int(round(time.time() * 1000))
-print(nowTime)
+temp = [(True, {'url': 'http://file3.data.weipan.cn/53881597/f258889bc6d64823f75f70c5695ab1cb1f67e6ad?ip=1543545635,116.236.107.142&ssig=yoMgWPlqWz&Expires=1543546235&KID=sae,l30zoo1wmz&fn=%E7%A4%BE%E4%BC%9A%E7%94%9F%E7%89%A9%E5%AD%A6--%E6%96%B0%E7%9A%84%E7%BB%BC%E5%90%88%EF%BC%88%E7%BE%8E%EF%BC%89%E7%88%B1%E5%BE%B7%E5%8D%8E.%E5%A8%81%E5%B0%94%E9%80%8A%E8%91%97+%E7%AC%AC+%282%29.pdf&se_ip_debug=116.236.107.142&from=1221134', 'path': 'ding/简捷启发式.pdf', 'checksum': '9134f9bb39364bf95e8ffb086ccf4547'})]
+print(temp[0][0])
+

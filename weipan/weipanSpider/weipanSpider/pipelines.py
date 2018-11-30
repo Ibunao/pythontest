@@ -15,6 +15,8 @@ import scrapy
 from scrapy.pipelines.files import FilesPipeline
 from scrapy.http import Request
 import os
+from weipanSpider.helpers.Mymongo import Mymongo
+import hashlib
 
 class MyFilesPipeline(FilesPipeline):
     '''
@@ -28,8 +30,12 @@ class MyFilesPipeline(FilesPipeline):
         :param info:
         :return:
         '''
-        self.item = item
         print(item['fileurl'])
+        mongo = Mymongo.get_instance()
+        data = dict(item)
+        data['md'] = hashlib.md5(data['fileurl'].encode(encoding = 'utf8')).hexdigest()
+        self.table = mongo.table
+        mongo.table.insert(data)
         yield scrapy.Request(item['fileurl'])
 
     def item_completed(self, results, item, info):
@@ -40,6 +46,8 @@ class MyFilesPipeline(FilesPipeline):
         :param info:
         :return:
         '''
+        md = hashlib.md5(item['fileurl'].encode(encoding = 'utf8')).hexdigest()
+        self.table.update({'md':md}, {"$set":{"result": results[0][0]}})
         print(results, 'xiazaiwancheng')
 
     def file_path(self, request, response=None, info=None):
@@ -63,6 +71,9 @@ class MyFilesPipeline(FilesPipeline):
             url = request
         else:
             url = request.url
+        md = hashlib.md5(url.encode(encoding = 'utf8')).hexdigest()
+        temp = self.table.find_one({"md": md})
+        if temp:
+            return '%s%s' % (temp['path'], temp['filename'])
 
-
-        return '%s/%s' % (self.item.path, self.item.filename)
+        return super().file_path(request, response, info)

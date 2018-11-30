@@ -26,17 +26,20 @@
       <file leaf-file-name="downloadfile.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/weipan_spider-master/weipan_spider/downloadfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="-1">
+              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+              <folding>
+                <element signature="e#53#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-68" />
-    <option name="y" value="20" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="82" />
+    <option name="y" value="31" />
     <option name="width" value="1476" />
     <option name="height" value="1040" />
   </component>
@@ -78,7 +81,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
@@ -107,7 +110,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-68" y="20" width="1476" height="1040" extended-state="1" />
+    <frame x="82" y="31" width="1476" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17019774" />
@@ -147,8 +150,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weipan_spider-master/weipan_spider/downloadfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="13" />
+        <state relative-caret-position="-1">
+          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#53#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
