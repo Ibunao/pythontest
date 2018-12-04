@@ -13,9 +13,11 @@ class WeipansearchSpider(scrapy.Spider):
     name = 'weipansearch'
     allowed_domains = ['weibo.com']
     # 抓取的目标url
-    target_url = 'http://vdisk.weibo.com/s/z9WlaCbMDoKIo?parents_ref=&category_id=&pn='
+    target_url = 'http://vdisk.weibo.com/s/qjmrgTLUFQnDy?parents_ref=&category_id=&pn='
+    # 子子目录
+    # target_url = 'http://vdisk.weibo.com/s/aSzWOdyGOdTx4?parents_ref=aSzWOdyGOdTwZ&category_id=0&pn='
     # 基础路径，爬取不同的用户需要设置一下
-    route = '林越风/哲学-科学'
+    route = '天人胜处AA/秘术'
     get_down_info = 'http://vdisk.weibo.com/api/weipan/fileopsStatCount?link={link}&ops=download&wpSign={sign}&_={time}'
     page = 1
     def start_requests(self):
@@ -37,7 +39,12 @@ class WeipansearchSpider(scrapy.Spider):
             info = item.xpath('.//th/span/a[1]/@data-info').extract_first()
             info = json.loads(info)
             if info['is_dir']:
-                self.process_dir(info, response)
+                # 文件夹的话还是手动下载吧
+                # self.process_dir(info, response)
+                # filepath = response.meta['filepath'] + info['filepath'] + '/'
+                # print('wenjianjia:' + filepath)
+                # yield Request(info['link'], meta={'cookiejar': response.meta['cookiejar'], 'filepath': filepath},
+                #               callback=self.parse)
                 continue
             # print(self.get_down_info.format(link=info['copy_ref'], sign=sign, time = int(round(time.time() * 1000))))
             href = self.get_down_info.format(link=info['copy_ref'], sign=sign, time = int(round(time.time() * 1000)))
@@ -61,7 +68,7 @@ class WeipansearchSpider(scrapy.Spider):
         print('dijiye'+ str(self.page))
         yield Request(self.target_url+str(self.page), meta={'cookiejar': response.meta['cookiejar'], 'filepath': response.meta['filepath']}, callback=self.parse)
 
-
+    # 封装成方法后上面调用不到
     def process_dir(self, info, response):
         filepath = response.meta['filepath']+info['filepath']+'/'
         print('wenjianjia:'+filepath)
