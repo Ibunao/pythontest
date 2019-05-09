@@ -12,12 +12,14 @@ class WeipansearchSpider(scrapy.Spider):
     '''
     name = 'weipansearch'
     allowed_domains = ['weibo.com']
+    # 首页数据
+    target_url = 'http://vdisk.weibo.com/u/1881788364?page='
     # 抓取的目标url
-    target_url = 'http://vdisk.weibo.com/s/qjmrgTLUFQnDy?parents_ref=&category_id=&pn='
+    # target_url = 'http://vdisk.weibo.com/s/uiPfBB4ijcB7?parents_ref=&category_id=&pn='
     # 子子目录
-    # target_url = 'http://vdisk.weibo.com/s/aSzWOdyGOdTx4?parents_ref=aSzWOdyGOdTwZ&category_id=0&pn='
+    # target_url = 'http://vdisk.weibo.com/s/uiPfBB4iBrNH?parents_ref=,uiPfBB4iBrNH&category_id=0&pn='
     # 基础路径，爬取不同的用户需要设置一下
-    route = '天人胜处AA/秘术'
+    route = 'Bob_LSC'
     get_down_info = 'http://vdisk.weibo.com/api/weipan/fileopsStatCount?link={link}&ops=download&wpSign={sign}&_={time}'
     page = 1
     def start_requests(self):
@@ -31,12 +33,16 @@ class WeipansearchSpider(scrapy.Spider):
         sign = re.search("var SIGN = \'(.+)\';", response.text).group(1)
         # print(sign)
         items = response.xpath('//tbody/tr')
+        # print(items)
         # 如果下一页没有则不往下进行了，要结束了
         if not len(items):
             return
 
         for item in items:
-            info = item.xpath('.//th/span/a[1]/@data-info').extract_first()
+            # info = item.xpath('.//th/span/a[1]/@data-info').extract_first()
+            # 首页没分类的不是th
+            info = item.xpath('.//td[2]/span/a[1]/@data-info').extract_first()
+            print(info)
             info = json.loads(info)
             if info['is_dir']:
                 # 文件夹的话还是手动下载吧

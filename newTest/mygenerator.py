@@ -24,38 +24,52 @@
 '''
 测试 yeild from
 '''
-def htest():
-    i = 1
-    while i < 4:
-        print('i的值', i)
-        n = yield i
-        print('n的值', n)
-        if i == 3:
-            return 100
-        i += 1
+# def htest():
+#     i = 1
+#     while i < 4:
+#         print('i的值', i)
+#         n = yield i
+#         print('n的值', n)
+#         if i == 3:
+#             return 100
+#         i += 1
+#
+#
+# def itest():
+#     val = yield from htest()
+#     print('val的值', val)
+#
+# t = itest()
+#
+# # i的值 1
+# t.send(None)
+#
+# # n的值 haha
+# # i的值 2
+# t.send('haha')
+#
+# # n的值 here
+# # i的值 3
+# t.send('here')
+
+# try:
+#     # n的值 hehe
+#     # val的值 100
+#     t.send('hehe')
+# except StopIteration as e:
+#     # 异常了 None
+#     print('异常了', e.value)
 
 
-def itest():
-    val = yield from htest()
-    print('val的值', val)
+class myTest(object):
+    def generator(self):
+        while True:
+            n = yield True
+            print('n的值', n)
 
-t = itest()
-
-# i的值 1
-t.send(None)
-
-# n的值 haha
-# i的值 2
-t.send('haha')
-
-# n的值 here
-# i的值 3
-t.send('here')
-
-try:
-    # n的值 hehe
-    # val的值 100
-    t.send('hehe')
-except StopIteration as e:
-    # 异常了 None
-    print('异常了', e.value)
+i = 1
+obj = myTest()
+gen = obj.generator()
+gen.send(None)
+while i < 5:
+    gen.send('hahaha')

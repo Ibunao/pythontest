@@ -4,9 +4,9 @@ from pymongo import MongoClient
 import re
 
 # win
-# driver = webdriver.Chrome(executable_path="./driver/chromedriver.exe")
+driver = webdriver.Chrome(executable_path="./driver/chromedriver.exe")
 # mac
-driver = webdriver.Chrome(executable_path="./driver/mac/chromedriver")
+# driver = webdriver.Chrome(executable_path="./driver/mac/chromedriver")
 driver.get('https://www.douyu.com/5227917')
 
 def cut_text(text, lenth):
