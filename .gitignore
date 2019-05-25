@@ -7,4 +7,11 @@ test/scrapyTest/testSpider/testSpider/download/
 download/
 .idea/*
 cankao/
-test1/.idea/workspace.xml
+test1/.idea/
+.DS_Store
+.DS_Store
+myselenium/.idea/
+myselenium/cookie/cookies.pkl
+myselenium/ghostdriver.log
+myselenium/itcast.png
+myselenium/itcast2.png
